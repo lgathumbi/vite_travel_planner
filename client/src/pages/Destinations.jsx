@@ -13,7 +13,7 @@ const Destinations = () => {
   useEffect(() => {
     const fetchDestinations = async () => {
       try {
-        const response = await fetch("/api/destinations");
+        const response = await fetch("https://travel-planner-16z2.onrender.com/destinations");
         const data = await response.json();
         setDestinations(data);
         setLoading(false);
@@ -32,7 +32,7 @@ const Destinations = () => {
     const newDestination = { name, location };
 
     try {
-      const response = await fetch("/api/destinations", {
+      const response = await fetch("https://travel-planner-16z2.onrender.com/destinations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -59,7 +59,7 @@ const Destinations = () => {
     const updatedDestination = { name, location };
 
     try {
-      const response = await fetch(`/api/destinations/${editDestinationId}`, {
+      const response = await fetch(`https://travel-planner-16z2.onrender.com/destinations/${editDestinationId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -85,7 +85,7 @@ const Destinations = () => {
 
   const handleDeleteDestination = async (destinationId) => {
     try {
-      const response = await fetch(`/api/destinations/${destinationId}`, {
+      const response = await fetch(`https://travel-planner-16z2.onrender.com/destinations/${destinationId}`, {
         method: "DELETE",
       });
 

@@ -13,7 +13,7 @@ const Home = () => {
     <>
     <Header/>
     <main class="main" id="main">
-      <section class="section hero" style={{backgroundImage:'url(./src/assets/bg-image.png)'}}>
+      <section class="section hero" style={{backgroundImage:'url("/bg-image.png")'}}>
         <h1 class="hero__title">
           Explore the World <br />
           just one Click
@@ -27,21 +27,21 @@ const Home = () => {
 
         <div class="tour__container">
           <div class="tour__card">
-            <img src="./src/assets/new_york.jpg" alt="" class="tour__card-img" />
+            <img src="/new_york.jpg" alt="" class="tour__card-img" />
             <div class="tour__data">
               <h5 class="tour__data-title">New York City</h5>
               <span class="tour__data-subtitle">USA</span>
             </div>
           </div>
           <div class="tour__card">
-            <img src="./src/assets/img-2.jpg" alt="" class="tour__card-img" />
+            <img src="/img-2.jpg" alt="" class="tour__card-img" />
             <div class="tour__data">
               <h5 class="tour__data-title">Eiffel Tower</h5>
               <span class="tour__data-subtitle">Paris</span>
             </div>
           </div>
           <div class="tour__card">
-            <img src="./src/assets/img-3.jpg" alt="" class="tour__card-img" />
+            <img src="/img-3.jpg" alt="" class="tour__card-img" />
             <div class="tour__data">
               <h5 class="tour__data-title">Colosseum</h5>
               <span class="tour__data-subtitle">Rome</span>

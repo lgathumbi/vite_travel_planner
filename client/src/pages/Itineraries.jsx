@@ -15,7 +15,7 @@ const Itineraries = () => {
   useEffect(() => {
     const fetchItineraries = async () => {
       try {
-        const response = await fetch("/api/itineraries");
+        const response = await fetch("https://travel-planner-16z2.onrender.com/itineraries");
         const data = await response.json();
         setItineraries(data);
         setLoading(false);
@@ -40,7 +40,7 @@ const Itineraries = () => {
     };
 
     try {
-      const response = await fetch("/api/itineraries", {
+      const response = await fetch("https://travel-planner-16z2.onrender.com/itineraries", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
